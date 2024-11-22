@@ -1,0 +1,188 @@
+{
+	"info": {
+		"_postman_id": "e2bfcc5e-33e3-4cbb-9461-9a62ad79da6e",
+		"name": "KT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20565342"
+	},
+	"item": [
+		{
+			"name": "GetCustomer",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost:5258/api/customers/123123124",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5258",
+					"path": [
+						"api",
+						"customers",
+						"123123124"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddExtraDetails",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"test1234 \",\r\n  \"icNumber\": \"123123124\",\r\n  \"mobile\": \"03545444914\",\r\n  \"countryCode\": \"1\",\r\n  \"email\": \"tzzt@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5258/api/customers/AddExtraData",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5258",
+					"path": [
+						"api",
+						"customers",
+						"AddExtraData"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SendMobileOTP",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"icNumber\": \"123123124\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5258/api/customers/SendMobileOTP",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5258",
+					"path": [
+						"api",
+						"customers",
+						"SendMobileOTP"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ComfirmMobileOTP",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"icNumber\": \"123123124\",\r\n  \"mobileOTP\": \"3706\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5258/api/customers/ComfirmMobileOTP",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5258",
+					"path": [
+						"api",
+						"customers",
+						"ComfirmMobileOTP"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ComfirmEmailOTP",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"icNumber\": \"123123124\",\r\n  \"emailOTP\" : \"8506\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5258/api/customers/ComfirmEmailOTP",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5258",
+					"path": [
+						"api",
+						"customers",
+						"ComfirmEmailOTP"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SetPIN",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"pin\": \"123456\",\r\n  \"retypePIN\": \"123456\",\r\n  \"icNumber\": \"123123124\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5258/api/customers/SetPIN",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5258",
+					"path": [
+						"api",
+						"customers",
+						"SetPIN"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,16 @@
+﻿global using FluentValidation;
+global using FluentValidation.AspNetCore;
+global using Humanizer;
+global using KT.API;
+global using KT.API.Filters;
+global using KT.Application;
+global using KT.Application.Commands;
+global using KT.Application.DTOs;
+global using KT.Domain.SeedWork;
+global using KT.Infrastructure.Data;
+global using MediatR;
+global using Microsoft.AspNetCore.Mvc;
+global using Microsoft.AspNetCore.Mvc.Filters;
+global using Microsoft.Extensions.Localization;
+global using Serilog;
+global using System.Text.Json.Serialization;
